@@ -1,0 +1,152 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+.tombol{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#tampilkan-jadwal{
+  align-items: center;
+  background-color: #fee6e3;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#tampilkan-jadwal:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+#tampilkan-jadwal:hover:after {
+  transform: translate(0, 0);
+}
+
+#tampilkan-jadwal:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+#tampilkan-jadwal:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .button-56 {
+    padding: 0 40px;
+  }
+}
+
+.tabel{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+
+table{
+  font-family: Sans-Serif;
+  text-align: center;
+  font-size: 3vw; /* Menggunakan 4% dari lebar viewport */
+  width: 90vw; /* Menggunakan 90% dari lebar viewport */
+  max-width: 800px;
+}
+
+table th{
+  background-color: #efefef;
+  font-weight: bold;
+  font-style: italic;
+}
+
+table td{
+  font-weight: bolder;
+}
+
+table .kelas{
+  background-color: cyan !important;
+}
+
+table .istirahat{
+  background-color: #efefef !important;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+}
+ 
+ /* Jam Ke */
+table tr td:first-child{
+  background-color: #0FF600;
+}
+
+/* Waktu */
+table tr td:nth-child(2){
+  background-color: #B5B08F;
+}
+
+table tr td:nth-child(3n){
+  background-color: #FF005A;
+}
+
+table tr td:nth-child(3n+4){
+  background-color: yellow;
+}
+
+table tr td:nth-child(3n+5){
+  background-color: orange;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  text-align: center;
+  padding: 10px 0;
+}
