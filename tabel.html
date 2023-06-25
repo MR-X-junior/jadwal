@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Rahmat adha">
+  <meta name="keywords" content="jadwal,jadwal pelajaran">
+  <meta name="description" content="Jadwal Pelajaran Kelas 10C SMA N1 MUARA ANCALONG">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jadwal Tabel Kelas 10 By Rahmat</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/tabel.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/script.js"></script>
+  </head>
+  <body>
+    <header>
+    <div class="topnav">
+      <h1><a href="#home" class="active">Jadwal Pelajaran</a></h1>
+      <div id="myLinks">
+        <a href="#news">Jadwal Box</a>
+        <a href="#contact">Download Jadwal</a>
+        <a href="#about">About</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </header>
+  <section>
+    <div class="tombol">
+      <button onclick="showTable()" id="tampilkan-jadwal" role="button">Tampilkan Tabel</button>
+    </div>
+    <div class="tabel">
+      <table border="1" class="hidden" id="jadwal-tabel">
+        <tr>
+          <th rowspan="2">Kelas</th>
+          <th rowspan="2">Jam Ke</th>
+          <th rowspan="2">Waktu</th>
+          <th colspan="6">Hari</th>
+        </tr>
+        <tr>
+          <th>Senin</th>
+          <th>Selasa</th>
+          <th>Rabu</th>
+          <th>Kamis</th>
+          <th>Jum'at</th>
+          <th>Sabtu</th>
+        </tr>
+        <tr>
+          <td rowspan="9" class="kelas">X-C</td>
+        </tr>
+        <tr>
+          <td>1</td>
+            <td>07.30 - 08.05</td>
+            <td>UPB</td>
+            <td>MTK</td>
+            <td>PKn</td>
+            <td>MTK</td>
+            <td>SENAM</td>
+            <td>MTK</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>08.05 - 08.40</td>
+          <td>ORKES</td>
+          <td>MTK</td>
+          <td>PKn</td>
+          <td>MTK</td>
+          <td>SBK</td>
+          <td>MTK</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>08.40 - 09.15</td>
+          <td>ORKES</td>
+          <td>PKn</td>
+          <td>PKn</td>
+          <td>IPS</td>
+          <td>SBK</td>
+          <td>ORKES</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>09.15 - 09.45</td>
+          <td colspan="6" class="istirahat">istirahat</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>09.45 - 10.20</td>
+          <td>SBK</td>
+          <td>PKn</td>
+          <td>SAINS</td>
+          <td>IPS</td>
+          <td>AGAIS</td>
+          <td>ORKES</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>10.20 - 10.55</td>
+          <td>B.INDO</td>
+          <td>B.INDO</td>
+          <td>SAINS</td>
+          <td>IPS</td>
+          <td>AGAIS</td>
+          <td>AGAIS</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>10.55 - 11.30</td>
+          <td>B.INDO</td>
+          <td>B.INDO</td>
+          <td>SAINS</td>
+          <td>SBK</td>
+          <td>-</td>
+          <td>AGAIS</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>11.30 - 12.05</td>
+          <td>B.INDO</td>
+          <td>IPS</td>
+          <td>SAINS</td>
+          <td>SBK</td>
+          <td>-</td>
+          <td>Pramuka</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2023 Rahmat adha</p>
+  </footer>
+  </body>
+</html>
